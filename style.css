@@ -1,0 +1,678 @@
+body {
+    margin: 0;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#header h1 {
+    padding: 4px;
+    margin: 0;
+    text-align: center;
+    color: blue;
+    background-color: gold;
+}
+
+/* Selectors */
+#selectors {
+    padding: 5px;
+    color: blue;
+    background-color: wheat;
+}
+
+/* Border */
+#border {
+    padding: 5px;
+    border-width: 4px;
+    /* border-style: dotted; */
+    /* border-style: groove; */
+    /* border-style: ridge; */
+    /* border-style: inset; */
+    /* border-style: outset; */
+    border-style: solid dotted dashed inset;
+    border-color: aqua;
+    /* Short hand */
+    /* border: 4px double blue; */
+}
+
+/* Outline */
+#outline {
+    margin-top: 3px;
+    border: 2px solid red;
+    /* outline-width: 2px; */
+    /* outline-style: dashed; */
+    /* outline-color: blue; */
+    /* outline-offset: 5px; */
+    outline: 2px dashed blue;
+}
+
+/* Padding */
+#padding {
+    margin-top: 5px;
+    border: 2px solid orange;
+    /* padding-top: 10px; */
+    /* padding-right: 150px; */
+    /* padding-bottom: 10px; */
+    /* padding-left: 70px; */
+    padding: 20px 120px 30px 180px;
+}
+
+/* Margin */
+#margin {
+    padding: 20px;
+    border: 2px solid orange;
+    /* margin-top: 30px; */
+    /* margin-right: 150px; */
+    /* margin-bottom: 10px; */
+    /* margin-left: 70px; */
+    margin: 20px 120px 30px 180px;
+}
+
+#margin-center {
+    padding: 20px;
+    border: 2px solid green;
+    width: 500px;
+    /*Width is neccessary for using margin auto to make item center */
+    /* margin: 10px auto 5px auto;  OR */
+    margin: 5px auto;
+}
+
+/* Height And Width */
+#width {
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid green;
+    /* width: 900px; */
+    width: 60%;
+}
+
+#height {
+    padding: 10px;
+    margin: 3x;
+    border: 2px solid blueviolet;
+    /* width: 900px; */
+    height: 20px;
+    /*Hieght is mostly given in px    It may cause Overflow problem */
+}
+
+/*Min-Height And Max-Height */
+#min-max-height {
+    padding: 10px;
+    margin: 3x;
+    border: 3px solid rgb(22, 4, 40);
+    width: 1200px;
+    min-height: 20px;
+    /*Hieght is mostly given in px    It may cause Overflow problem */
+    max-height: 600px;
+}
+
+/*Min-Width And Max-Width */
+#min-max-width {
+    padding: 10px;
+    margin: 3x;
+    border: 3px solid rgb(22, 4, 40);
+    min-width: 20px;
+    /*Hieght is mostly given in px    It may cause Overflow problem */
+    max-width: 1200px;
+}
+
+/* Box-Sizing */
+#box-sizing {
+    padding: 10px;
+    margin: 3x;
+    border: 3px solid blue;
+    width: 500px;
+    box-sizing: border-box;
+    /*content-box;*/
+
+}
+
+/* OverFlow */
+#overflow {
+    /* padding: 10px; */
+    margin: 3x;
+    border: 3px solid blue;
+    height: 450px;
+    width: 450px;
+    /* overflow-x:hidden; */
+    /* overflow-x: hidden; */
+    /* overflow: auto; hidden, scroll, visible<-- default, */
+    overflow: auto;
+
+}
+
+/* Border-Radius */
+#border-radius {
+    margin: 3x;
+    padding: 15px;
+    border: 3px solid blue;
+    height: 200px;
+    width: 200px;
+    /* border-top-left-radius: 25px; */
+    /* border-radius: 10px 40px 30px 15px; */
+    /* border-radius: 10px 40px; */
+    /* border-radius: 30px; */
+    border-radius: 50%;
+    background-color: orange;
+    /* -webkit-border-radius:30px ; <-- for unsupported browser chrome and safari */
+    /* -moz-border-radius:30px ; <-- for unsupported browser mozila */
+}
+
+/* Box-Shadow */
+#box-shadow {
+    margin: 10px auto;
+    padding: 15px;
+    border: 3px solid blue;
+    height: 200px;
+    width: 200px;
+    /* box-shadow: 2px 2px 6px 4px orange; */
+    /* box-shadow: 7px 6px; */
+    box-shadow: 2px 2px 6px 4px orange, 4px 4px 5px 7px green, 10px 10px 15px 7px blue inset;
+
+}
+
+/* Float */
+#float1 {
+    margin: 4px;
+    padding: 15px;
+    border: 3px solid blue;
+    height: 200px;
+    width: 500px;
+    float: left;
+
+}
+
+#float2 {
+    padding: 15px;
+    border: 3px solid red;
+    height: 400px;
+    width: 200px;
+    float: left;
+}
+
+#float3 {
+    padding: 15px;
+    border: 3px solid violet;
+    height: 400px;
+    width: 200px;
+    float: right;
+}
+
+#clear1 {
+    border: 3px solid blue;
+    width: 400px;
+    background-color: aqua;
+    float: left;
+    margin: 2px;
+}
+
+#clear2 {
+    width: 400px;
+    border: 3px solid pink;
+    background-color: greenyellow;
+    float: right;
+    margin: 2px;
+}
+
+#clear3 {
+    border: 2px solid black;
+    background-color: gold;
+    margin: 2px;
+    clear: both;
+    /*left and right*/
+}
+
+#font-style {
+    width: 50%;
+    padding: 25px;
+    border: 2px solid black;
+    float: left;
+    font-size: 125x;
+    line-height: 2em;
+    /*font-weight: 200; /*bold, bolder, light,lighter*/
+    font-style: oblique;
+    /*italic normal*/
+    font-variant: small-caps;
+}
+
+#font-style1 {
+    width: 50%;
+    padding: 25px;
+    border: 2px solid blue;
+    font-size: 15px;
+    float: right;
+}
+
+#font-style1 span {
+    font-size: 2em;
+}
+
+#text-properties {
+    width: 50%;
+    padding: 25px;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    /*right,center, justify, left*/
+    text-align-last: right;
+    /*start,auto,left*/
+    text-transform: capitalize;
+    /*uppercase,capitalize,lowercase,none*/
+    text-indent: 50px;
+    /*starting point*/
+    word-spacing: 20px;
+    letter-spacing: 5px;
+}
+
+#text-decoration {
+    width: 50%;
+    padding: 25px;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+
+}
+
+#text-decoration h2 {
+    text-decoration-line: underline;
+    /*none,line-through, underline,overline */
+    text-decoration-color: aqua;
+    text-decoration-style: wavy;
+    /*dashed,dotted,solid,double  */
+    /*text-decoration: underline red wavy; /*short hand*/
+}
+
+#word-wrap {
+    width: 400px;
+    border: 1px solid black;
+    word-wrap: break-word;
+    /*normal <--default*/
+}
+
+#word-break {
+    width: 400px;
+    border: 1px solid black;
+    word-break: break-all;
+    /*keep-all <--default*/
+}
+
+#text-shadow h1 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    color: white;
+    /*x-axis,y-axis,blur, color*/
+    text-shadow: 2px -2px 5px red, 4px 2px 5px blue;
+}
+
+#white-space {
+    width: 400px;
+    border: 1px solid black;
+    white-space: pre-wrap;
+    /*inherit,nowrap -->> not work-->   pre, pre-line,pre-wrap  */
+    /* overflow: hidden; */
+}
+
+#text-overflow {
+    width: 400px;
+    border: 1px solid black;
+    white-space: nowrap;
+    /*inherit,nowrap -->> not work-->   pre, pre-line,pre-wrap  */
+    text-overflow: ellipsis;
+    /*ellipsis,clip */
+    overflow: hidden;
+}
+
+#writing-mode {
+    width: 400px;
+    border: 1px solid black;
+    writing-mode: sideways-lr;
+    /* vertical-rl, vertical-lr horizontal-tb*/
+}
+
+#coloum-count {
+    width: 700px;
+    border: 1px solid black;
+    writing-mode: sideways-lr;
+    /* vertical-rl, vertical-lr horizontal-tb*/
+    /* column-count: 3; */
+    column-width: 250px;
+    column-gap: 50px;
+    /* column-rule-width: 2px;
+    column-rule-style: dotted;
+    column-rule-color: red; */
+    column-rule: 5px double green;
+
+}
+
+#coloum-count h1 {
+    column-span: all;
+}
+
+#font-family {
+    font-family: 'Caprasimo', cursive;
+    /* font-family: 'Fasthand', cursive; */
+}
+
+#list-style ul {
+    border: 2px solid red;
+    list-style-type: circle;
+    /*circle ,square ,disc*/
+    list-style-image: url("./arrow16.png");
+    /*ICONFINDER.COM*/
+    list-style-position: outside;
+
+}
+
+#list-style ol {
+    /*list-style-type: circle;  /*circle ,square ,disc*/
+    list-style-type: decimal;
+    /*none, upper-latin,upper-alpha, lower-alpha,upper-roman,lower-roman*/
+    list-style: none inside url("./arrow16.png");
+}
+
+/* body{ */
+/* background-color: tan; */
+/* width: 800px;
+    height: 800px;
+    border: 2px solid black; */
+/* background-image: url("./Swan.jpg");
+    background-repeat:no-repeat;/*no-repeat ,round,repeat-x,repeat-y,space*/
+/* background-position: right bottom; */
+/* background-position: 100px 200px; */
+/* background-position: 20% -40%; */
+
+/* For multiple backgroud-image */
+/* background-image:url("./nature.avif"); */
+/* background-repeat:no-repeat,no-repeat;/*no-repeat ,round,repeat-x,repeat-y,space*/
+/* background-position: right bottom; */
+/* background-position: 100px 200px; */
+/* background-position: 20% -40%, 70%,10%; */
+/* background-attachment: scroll; */
+/* }  */
+#bg-img {
+    width: 800px;
+    height: 600px;
+    border: 2px solid black;
+    background-image: url("./Swan.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bg-clip {
+    width: 800px;
+    height: 600px;
+    padding: 30px;
+    margin: 5px auto;
+    text-align: justify;
+
+    background-color: white;
+    /*-webkit- */
+    background-clip: text;
+    /*border-box ,padding-box, content-box*/
+}
+
+#gradient {
+    width: 800px;
+    height: 600px;
+    padding: 30px;
+    margin: 5px auto;
+    text-align: justify;
+    border: 12px double black;
+    background: linear-gradient(to left, orange, red, green, yellowgreen, yellow, orange, blue);
+
+}
+
+#opacity {
+    width: 800px;
+    height: 600px;
+    /* padding: 30px; */
+    margin: 5px auto;
+    text-align: justify;
+    border: 12px double black;
+    background: tan;
+    opacity: 0.5;
+}
+
+#bg-blend-mixblend {
+    width: 800px;
+    height: 600px;
+    /* padding: 30px; */
+    margin: 5px auto;
+    /* text-align: justify; */
+    border: 12px solid black;
+    background-color: red;
+    /* background: linear-gradient(to right,red, yellow,yellowgreen),url('Nature.jpg'); */
+    /* background-blend-mode:normal; /* hue,screen,darken, hard-light,soft-light ,saturation,darken */
+
+}
+
+/* img{
+    mix-blend-mode:difference
+} */
+/* h2{
+    font-size: 120px;
+    margin: 0;
+} */
+h2.first {
+    color: green;
+}
+
+h2.second {
+    color: blue;
+    margin-top: -100px;
+    mix-blend-mode: hard-light;
+    /* darken , difference,soft-light,screen ,hue,*/
+}
+
+h2 {
+    font-size: 100px;
+    margin: 0;
+    display: inline-block;
+    /*none,*/
+}
+
+/* ul{
+    width: 500px;
+    border: 2px solid red;
+} */
+/* li{
+    border: 1px solid blue; */
+/* display: inline;none,inline-block */
+/* } */
+span {
+    width: 200px;
+    /* display: block; */
+    border: 2px solid yellow;
+    margin: 20px;
+    display: list-item;
+    /* list-style-position:inside; */
+}
+
+a {
+    border: 2px solid blue;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    display: inline-block;
+}
+
+tr.first {
+    visibility: collapse;
+}
+#pos{
+    width: 400px;
+    height: 400px;
+    background: tan;
+    position: relative;
+}
+#position {
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+    background: greenyellow;
+    position:absolute;/*relative, fixed, absolute,sticky*/
+    right:0px;
+    top: 0px;
+}
+/* p{
+    font-size: 30px;
+    line-height: 30px;
+} */
+.box{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border: 1px solid red;
+    font-size: 25px;
+}
+#z-index{
+    background: lightblue;
+    top: 100px;
+    left: 50px;
+    z-index: 2;
+}
+#z-index1{
+    background: lightgreen;
+    top: 150px;
+    left: 100px;
+    z-index: 1;
+}
+#z-index2{
+    background: lightyellow;
+    top: 200px;
+    left: 150px;
+    z-index: 2;
+}
+table{
+    /* border-spacing: 10px 10px; */
+    border-collapse:separate ;/*collapse*/
+    width: 300px;
+    /* empty-cells: hide; */
+     /*table-layout:auto ;/*fixed*/
+}
+td,th {
+    vertical-align: bottom;/*top*/
+    padding: 10px;
+}
+caption{
+    caption-side: top;/*bottom*/
+}
+table,th,td {
+    border: 1px solid black;
+}
+tr:hover{
+    background:gainsboro;
+}
+tr:nth-child(even){
+    background: skyblue;
+}
+#resize{
+    width: 500px;
+    height: 200px;
+    border: 1px solid red;
+    overflow: auto;
+    resize:both;/*none, vertical,horizontal*/
+}
+textarea{
+    resize:both;/* vertical, horizontal*/
+}
+#cursur{
+    border: 1px solid red;
+    background: papayawhip;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    cursor:cell;/*pointer,wait,auto,text,vertical-text,alias,none,no-drop,move,cell,crosshair,not-allowed,ne-resize ,help,progress*/
+}
+#img{
+    float: left;
+    clip-path:circle( 40% at 50% 50%);
+    shape-outside:circle( 45% at 50% 50%) ;
+    shape-margin: 5px;
+    /* clip-path:ellipse( 40% 10% at 50% 50%); */
+    /* clip-path:inset(5% 20% 15% 10%);  Rectangle */
+    /* clip-path:polygon( 50% 0, 100% 50%, 50% 100%,0% 50%);*/  /*bennettifeely*/
+}
+#filter{
+    float: left;
+    /* filter: blur(0.5px); */
+    /* filter: brightness(150%); */
+    /* filter:contrast(120%) */
+    filter: drop-shadow(150%)
+}
+#transition{
+    width: 150px;
+    height: 150px;
+    background: orange;
+    /* transition-property: width,height,background;
+    transition-duration: 2s,2s,2s; */
+    /* transition:width,height,background ,2s,2s,2s; */
+    /* transition: all,2s; */
+     /* transition-timing-function:cubic-bezier(0.1,0.7,1.2,2);*/ /* ease-in,ease-in-out,step-end,steps(4) */
+    /*  transition-delay: 1s;*/
+
+    transition: all 2s linear 1s; 
+}
+#transition:hover{
+    width: 300px;
+    height: 300px;
+    background: greenyellow;
+}
+#transform{
+    width: 150px;
+    height: 150px;
+    background: orange;
+    /* transform: scale(1); */
+    transform: rotate(0deg);
+    transition: transform 2s;
+    /* transform-origin: left top; */
+}
+#transform:hover{
+    /* transform: scale(2); */
+    transform: rotate(360deg);
+}
+.animation{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    line-height: 300px;
+    margin: -150px;
+    background: white;
+    color: #03446A;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    /* animation-name: sample; */
+    /* animation-duration: 2s; */
+    /* animation-timing-function: ease-in-out; */
+    /* animation-delay: 1s; */
+     /*animation-iteration-count: 3; */ /*infinite*/ 
+     /*animation-direction: alternate;*/ /*alternate, normal, reverse,  alternate-reverse*/
+   
+
+     animation: sample 2s cubic-bezier(0.6,0.1,1.0,0.1) 1s infinite alternate;
+}
+@keyframes sample {
+    /* 0%{
+        border-radius: 0%;
+    }
+    50%{
+        border-radius: 50%;
+    }
+    100%{
+        border-radius: 0%;
+    } */
+    from{
+        border-radius: 0%;
+    }
+    to{
+        border-radius: 50%;
+        background-color: tomato;
+        color: white;
+    }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+</head>
+<style>
+    /* * {
+        margin: 0;
+        padding: 0;
+    } */
+
+    body {
+        background: slategrey;
+        margin: 0;
+        padding: 0;
+    }
+
+    #wrapper {
+        /* border: 0px solid black; */
+        width: 1000px;
+        background-color: white;
+        margin: 0 auto;
+    }
+
+    #header {
+        background: rgb(48, 14, 200);
+        height: 100px;
+        color: white;
+        text-align: center;
+        padding: 2px;
+    }
+
+    #header h1 {
+        padding: auto;
+    }
+
+    #menu {
+        background: lightblue;
+    }
+
+    #menu ul {
+        margin: 0;
+        /* padding: 0; */
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+
+    #menu li a {
+        display: block;
+        padding: 10px 10px;
+        text-decoration: none;
+    }
+    #menu li a:hover {
+        background-color: aqua;
+    }
+    #content {
+        width: 800px;
+        float: left;
+        padding: 15px;
+        box-sizing: border-box;
+        min-height: 400px;
+    }
+    #sidebar li{
+        list-style: none;
+        padding: 10px;
+    }
+
+    #sidebar {
+        background: lightgreen;
+        width: 200px;
+        float: right;
+        min-height: 400px;
+    }
+
+    #sidebar a {
+        list-style: none;
+        text-decoration: none;
+        color: blue;
+    }
+    #sidebar li:hover{
+        background-color: aqua;
+    }
+    #footer {
+        background: lightsalmon;
+        clear: both;
+        padding: 7px 10px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>First Page</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="">Home</a> </li>
+                <li><a href="">About</a> </li>
+                <li><a href="">Galary</a> </li>
+                <li><a href="">Contact</a> </li>
+                <li> <a href="">Basics</a> </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2> Design Basic layout</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil maxime sunt ipsa suscipit soluta atque.
+                Voluptatem hic delectus soluta animi est ad, impedit sunt nihil aperiam possimus, dolor dignissimos
+                minima
+                amet, praesentium quis! Eius autem accusantium voluptates sed neque, asperiores labore eveniet fugiat
+                nesciunt nam veritatis explicabo placeat ipsam consectetur enim distinctio dolores qui. Quidem quas
+                molestias placeat rem aliquid corrupti tempora voluptas molestiae, tempore accusantium adipisci maxime
+                possimus, incidunt porro soluta aperiam labore culpa delectus laudantium quisquam voluptatem. Autem
+                officia
+                rerum modi quia reprehenderit sunt adipisci obcaecati inventore suscipit quis temporibus pariatur
+                architecto
+                culpa esse alias, asperiores, laudantium doloremque maiores ratione explicabo cum soluta eveniet magnam.
+                Obcaecati iure amet nam doloremque exercitationem pariatur facere omnis odio itaque cum? Neque, eligendi
+                rerum maxime rem ipsa ipsum. Facere doloribus excepturi, cumque sequi cum omnis porro. Adipisci odit
+                cupiditate error quasi, quaerat, sint sit non maxime excepturi nemo cum iste delectus molestiae
+                temporibus
+                doloribus architecto hic. Error ipsum a incidunt provident totam ratione adipisci illo, consequatur sit
+                praesentium voluptas possimus eum optio ex ab vero consectetur. Cupiditate animi esse itaque fugiat
+                voluptatum eius officiis magni officia commodi illum. Quo nihil sed, minus earum enim porro distinctio
+                mollitia aliquam, maiores nulla laboriosam? Architecto!</p>
+        </div>
+        <div id="sidebar">
+            <ul>
+                <li><a href="">Home</a> </li>
+                <li><a href="">About</a> </li>
+                <li><a href="">Galary</a> </li>
+                <li><a href="">Contact</a> </li>
+                <li> <a href="">Basics</a> </li>
+            </ul>
+        </div>
+        <div id="footer">
+            Designed by @abc
+        </div>
+    </div>
+</body>
+
+</html>

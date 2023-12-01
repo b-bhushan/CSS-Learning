@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/" onsubmit="subFun()">
+            Id :
+            <input id="id" type="text" style="margin-bottom: 5px;" onchange="cngFun()"><br/>
+            Name :
+            <input id="name" type="text" onchange="cngFun()"><br/>
+            <input type="submit">
+            <div id="test"></div>
+        </form>
+    </div>
+    <script>
+        function cngFun(){
+            const id=document.getElementById("id").value;
+            const name=document.getElementById("name").value;
+            // console.log("Submitted");
+            document.getElementById("test").innerHTML=`<h2>Id is : ${id} and Name is : ${name}<h2/>`;
+            // alert(`Submitted ${id}` );
+        }
+    </script>
+</body>
+</html>
